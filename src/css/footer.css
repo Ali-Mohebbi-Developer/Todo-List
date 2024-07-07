@@ -1,0 +1,104 @@
+footer {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right, #a8ff78, #78ffd6);
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: anime1 5s linear infinite;
+  }
+  footer:hover > div > nav > a:nth-of-type(1) {
+    opacity: 1;
+    transform: translate(-10%);
+  }
+  footer:hover > div > nav > a:nth-of-type(2) {
+    opacity: 1;
+    transform: translate(-10%);
+  }
+  footer:hover > div > nav > a:nth-of-type(3) {
+    opacity: 1;
+    transform: translate(-10%);
+  }
+  footer:hover > div > nav > a:nth-of-type(4) {
+    opacity: 1;
+    transform: translate(-10%);
+  }
+  footer > div {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background-image: linear-gradient(to right, #a1ffce, #faffd1);
+    justify-content: center;
+    align-items: center;
+    animation: anime2 5s linear infinite;
+  }
+  footer > div > figure {
+    width: 90%;
+    height: 90%;
+  }
+  footer > div > figure > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    animation: anime2 5s linear infinite;
+  }
+  footer > div > nav {
+    position: absolute;
+    width: 130%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  footer > div > nav > a {
+    color: #78ffd6;
+    font-size: 25px;
+    margin: 5px 0;
+    opacity: 0;
+    transition: 1s;
+    transform: translate(10%);
+  }
+  footer > div > nav > a:nth-of-type(2) {
+    transition-delay: 0.4s;
+  }
+  footer > div > nav > a:nth-of-type(3) {
+    transition-delay: 0.8s;
+  }
+  footer > div > nav > a:nth-of-type(4) {
+    transition-delay: 1.2s;
+  }
+  
+  @keyframes anime1 {
+    0%, 100% {
+      border-radius: 72% 28% 85% 15%/30% 78% 22% 70%;
+    }
+    20% {
+      border-radius: 64% 36% 68% 32%/41% 49% 51% 59%;
+    }
+    40% {
+      border-radius: 42% 58% 51% 49%/50% 35% 65% 50%;
+    }
+    60% {
+      border-radius: 21% 79% 34% 66%/60% 27% 73% 40%;
+    }
+    80% {
+      border-radius: 48% 52% 61% 39%/31% 55% 45% 69%;
+    }
+  }
+  @keyframes anime2 {
+    0%, 100% {
+      border-radius: 50% 50% 65% 35%/28% 68% 32% 72%;
+    }
+    25% {
+      border-radius: 64% 36% 65% 35%/42% 68% 32% 58%;
+    }
+    50% {
+      border-radius: 64% 36% 45% 55%/27% 68% 32% 73%;
+    }
+    75% {
+      border-radius: 64% 36% 64% 36%/27% 47% 53% 73%;
+    }
+  }/*# sourceMappingURL=footer.css.map */
